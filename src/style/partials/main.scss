@@ -98,6 +98,11 @@ body{
 	opacity: 0.8;
 }
 
+.mb20{margin-bottom: 20px;}
+.mt20{margin-top: 20px;}
+.mb10{margin-bottom: 10px;}
+.mt10{margin-top: 10px;}
+
 #header{
 	padding-top: 16px;
 	padding-bottom: 10px;
@@ -145,7 +150,7 @@ body{
 }
 
 .menu_row{
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 	background: $color1;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -218,17 +223,21 @@ body{
 
 .left_side_bar{
 	float: left;
+	& > *{
+		margin-right: 45px;
+	}
 }
 
 .right_side_bar{
 	float: right;
+	& > *{
+		margin-left: 45px;
+	}
 }
 
 .inner{
 	position: relative;
 	overflow: hidden;
-	padding-left: 45px;
-	padding-right: 45px;
 }
 
 #left-swap-menu{
@@ -239,7 +248,7 @@ body{
 		color: #33333d;
 		text-transform: uppercase;
 		border-bottom: 1px solid $color1;
-		padding-top: 20px;
+		padding-top: 15px;
 		padding-bottom: 11px;
 		margin-bottom: 12px;
 
