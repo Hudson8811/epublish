@@ -38,6 +38,8 @@
 
 
 .hmp-product-card {
+    padding: 38px 57px 54px 40px;
+    margin-top: 15px;
     border-radius: 15px;
     border: 1px solid #d9d9d9;
     background-color: #ffffff;
@@ -48,12 +50,15 @@
     line-height: 22px;
 
     &--half {
-        width: 46.8518518519%;
+        width: 46.85%;
 
     }
 
     &--blue {}
 
+    &+.hmp-product-card {
+        float: right;
+    }
 
 }
 
