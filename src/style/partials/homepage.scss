@@ -1,0 +1,104 @@
+.homepage-content-block {}
+
+.hcb-top {
+    display: block;
+    width: 100%;
+    background-image: url(../img/blue-line.jpg);
+    background-position-y: 49%;
+    background-repeat: no-repeat;
+
+    &__left {
+        background: #ffffff;
+        float: left;
+
+        img {
+            line-height: 1;
+        }
+
+        img,
+        h2 {
+            vertical-align: middle;
+        }
+    }
+
+
+}
+
+.hcb-top-title {
+    display: inline-block;
+    vertical-align: middle;
+    color: #33333d;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-left: 14px;
+    padding-right: 17px;
+}
+
+
+.hmp-product-card {
+    border-radius: 15px;
+    border: 1px solid #d9d9d9;
+    background-color: #ffffff;
+    float: left;
+    color: #5d5d68;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+
+    &--half {
+        width: 46.8518518519%;
+
+    }
+
+    &--blue {}
+
+
+}
+
+.hmp-product-card {
+    &__title {}
+
+    &__type {}
+
+    p {}
+
+    ul {}
+
+
+
+    br {}
+
+    a {
+        color: #3c5adc;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        &:active {}
+
+        &:focus {}
+    }
+
+    li {}
+
+    li {}
+
+    .btn {
+        &:hover {}
+
+        &:active {}
+
+        &:focus {}
+    }
+}
+
+.hmp-product-card-bottom {
+    &__price {
+        span {}
+    }
+
+}
