@@ -4,10 +4,12 @@
 
 .homepage-content-block {
     margin-right: -3%;
+    .hcb-top {
+        margin-right: 3%;
+    }
 }
 
 .hcb-top {
-    margin-right: 3%;
     display: block;
     position: relative;
     &:before{
@@ -212,7 +214,7 @@
 
 
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1400px){
     .hmp-product-card--half{
         float: none;
         width: auto;
