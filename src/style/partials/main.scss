@@ -16,7 +16,10 @@ a{
 
 html,body{
 }
-
+img {
+	max-width: 100%;
+	height: auto;
+}
 iframe{
 	display: block;
 	max-width: 100%;
@@ -117,6 +120,11 @@ body{
 .mt20{margin-top: 20px;}
 .mb10{margin-bottom: 10px;}
 .mt10{margin-top: 10px;}
+.tac{text-align: center;}
+@media screen and(max-width:1540px){
+	.tac-max-1540{text-align: center;}
+}
+
 .nowrap{	white-space: nowrap;}
 .ah2-title{
 	font-size: 20px;

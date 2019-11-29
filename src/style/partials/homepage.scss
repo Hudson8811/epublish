@@ -1,45 +1,48 @@
-.homepage-content{
+.homepage-content {
     padding-bottom: 75px;
 }
 
 .homepage-content-block {
     margin-right: -3%;
+
     .hcb-top {
         margin-right: 3%;
     }
 }
 
 .hcb-top {
-    display: block;
     position: relative;
-    &:before{
-        content: '';
+    display: block;
+
+    &:before {
         position: absolute;
-        left: 0;
         top: 50%;
-        margin-top: -1px;
+        left: 0;
         width: 100%;
         height: 2px;
+        margin-top: -1px;
+        content: '';
         background-color: $color1;
     }
 
     &__left {
-        vertical-align: top;
         position: relative;
+        vertical-align: top;
 
         .img {
-            height: 66px;
-            vertical-align: middle;
-            line-height: 66px;
             float: left;
             width: 70px;
+            height: 66px;
             padding-right: 12px;
+            vertical-align: middle;
             background-color: #fff;
-            img{
+            line-height: 66px;
+
+            img {
                 display: inline-block;
-                vertical-align: middle;
                 max-width: 100%;
                 max-height: 100%;
+                vertical-align: middle;
             }
         }
 
@@ -55,40 +58,40 @@
 
 .hcb-top-title {
     position: relative;
-    overflow: hidden;
-    min-height: 66px;
-    color: #33333d;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
-    text-transform: uppercase;
     display: flex;
+    overflow: hidden;
     align-items: center;
-    span{
-        background-color: #fff;
+    min-height: 66px;
+    text-transform: uppercase;
+    color: #33333d;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+
+    span {
         padding-right: 20px;
+        background-color: #fff;
     }
 }
 
 
 .hmp-product-card {
-    padding: 38px 57px 54px 40px;
-    margin-top: 15px;
-    border-radius: 15px;
-    border: 1px solid #d9d9d9;
-    background-color: #ffffff;
-
-    color: #5d5d68;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin-top: 15px;
     margin-right: 3%;
     margin-bottom: 35px;
+    padding: 38px 57px 54px 40px;
+    color: #5d5d68;
+    border: 1px solid #d9d9d9;
+    border-radius: 15px;
+    background-color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
 
-    &--half{
+    &--half {
         float: left;
         width: 47%;
 
@@ -99,29 +102,29 @@
 
 .hmp-product-card {
     &__title {
+        text-transform: uppercase;
+        color: #33333d;
         font-size: 20px;
         line-height: 23px;
-        color: #33333d;
-        text-transform: uppercase;
     }
 
     &__type {
+        margin-bottom: 14px;
+        color: $color1;
         font-size: 20px;
         line-height: 23px;
-        color: $color1;
-        margin-bottom: 14px;
     }
 
     &__type2 {
-        font-weight: bold;
-        color: #5d5d68;
-        margin-bottom: 10px;
         margin-top: 14px;
+        margin-bottom: 10px;
+        color: #5d5d68;
+        font-weight: bold;
     }
 
-    iframe{
-        max-width: 100%;
+    iframe {
         width: 315px;
+        max-width: 100%;
         height: 177px;
     }
 
@@ -129,17 +132,19 @@
 
     ul {
         list-style: none;
-        li{
-            padding-left: 15px;
+
+        li {
             position: relative;
             margin-bottom: 2px;
-            &:before{
-                content: '';
+            padding-left: 15px;
+
+            &:before {
                 position: absolute;
-                left: 0;
                 top: 9px;
+                left: 0;
                 width: 5px;
                 height: 5px;
+                content: '';
                 -webkit-border-radius: 3px;
                 -moz-border-radius: 3px;
                 border-radius: 3px;
@@ -148,15 +153,15 @@
         }
     }
 
-    &-bottom{
+    &-bottom {
         margin-top: 25px;
     }
 
     br {}
 
     a {
-        color: #3c5adc;
         text-decoration: underline;
+        color: #3c5adc;
 
         &:hover {
             text-decoration: none;
@@ -168,21 +173,22 @@
     }
 
     .btn {
-        background-color: $color2;
-        color: #33333d;
-        text-decoration: none;
         display: inline-block;
-        vertical-align: top;
         width: 200px;
         height: 50px;
-        line-height: 50px;
+        margin-right: 20px;
         text-align: center;
+        vertical-align: top;
+        text-decoration: none;
+        color: #33333d;
         -webkit-border-radius: 25px;
         -moz-border-radius: 25px;
         border-radius: 25px;
-        font-size: 18px;
+        background-color: $color2;
         font-weight: 500;
-        margin-right: 20px;
+        font-size: 18px;
+        line-height: 50px;
+
         &:hover {}
 
         &:active {}
@@ -193,15 +199,16 @@
 
 .hmp-product-card-bottom {
     &__price {
+        position: relative;
         display: inline-block;
         vertical-align: top;
-        position: relative;
-        line-height: 50px;
-        font-size: 20px;
         color: #33333d;
+        font-size: 20px;
+        line-height: 50px;
+
         span {
-            font-size: 16px;
             color: #5d5d68;
+            font-size: 16px;
         }
     }
 
@@ -212,38 +219,136 @@
 
 
 
+.hmp-product-card {
+    &--banner {
+        padding: 0;
+        border: 0;
+        padding-bottom: 65px;
+        margin-bottom: 0;
+    }
 
+}
 
-@media screen and (max-width: 1400px){
-    .hmp-product-card--half{
+.homepage-banner-slider {
+    &__slide {
+        img{
+            width: 100%;
+        }
+    }
+
+    .slick-arrow {
+        position: absolute;
+        bottom: -50px;
+        display: block;
+        box-sizing: border-box;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0);
+        border: 1px solid #b3b3b3;
+        border-radius: 5px;
+        background-color: #ffffff;
+        background-repeat: no-repeat;
+        background-position: center center;
+        font-size: 0;
+        line-height: 0;
+
+        &.slick-next {
+            right: 0;
+            background-image: url(../img/next-arr.png);
+        }
+
+        &.slick-prev {
+            right: 44px;
+            background-image: url(../img/prev-arr.png);
+        }
+
+        &.slick-disabled {
+            display: none;
+        }
+        &:hover {
+            background-color: #f0f6ff;
+        }
+    }
+
+    .slick-dots {
+        list-style: none;
+        position: absolute;
+        right: 91px;
+        bottom: -40px;
+
+        li {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1px solid #bfbfbf;
+            background-color: #ffffff;
+            padding: 0;
+            margin: 0 10px;
+            cursor: pointer;
+            box-sizing: border-box;
+
+            &:before {
+                display: none;
+            }
+
+            button {
+                display: none;
+            }
+
+            &.slick-active {
+                background-color: #447dda;
+                border: 0;
+                pointer-events: none;
+            }
+            &:hover {
+                background-color: #447dda;
+                border: 0;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .hmp-product-card--half {
         float: none;
         width: auto;
     }
 }
 
-@media screen and (max-width: 1000px){
-    .homepage-content{
+@media screen and (max-width: 1000px) {
+    .homepage-content {
         padding-bottom: 25px;
     }
 }
 
-@media screen and (max-width: 700px){
-    .hmp-product-card{
+@media screen and (max-width: 700px) {
+    .hmp-product-card {
         padding: 25px;
     }
-    .hcb-top:before{
+    .hmp-product-card--banner{
+        padding: 0;
+        padding-bottom: 65px;
+    }
+    .hcb-top:before {
         display: none;
     }
-    .hmp-product-card__title, .hmp-product-card__type{
+
+    .hmp-product-card__title,
+    .hmp-product-card__type {
         font-size: 17px;
         line-height: 20px;
     }
-    .hcb-top__left .img{
+
+    .hcb-top__left .img {
         width: 52px;
         height: 50px;
         line-height: 50px;
     }
-    .hcb-top-title{
+
+    .hcb-top-title {
         min-height: 50px;
         font-size: 18px;
         line-height: 23px;
