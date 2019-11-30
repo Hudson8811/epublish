@@ -312,9 +312,28 @@
 }
 
 @media screen and (max-width: 1400px) {
+    .homepage-content-block, .homepage-content-block .hcb-top, .hmp-product-card{
+        margin-right: 0;
+    }
     .hmp-product-card--half {
         float: none;
         width: auto;
+    }
+    .hmp-product-card--banner{
+        max-width: 525px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .homepage-content-block__top{
+        display: flex;
+        flex-direction: column;
+    }
+    .homepage-content-block__top .hmp-product-card{
+        order: 2;
+    }
+    .homepage-content-block__top .hmp-product-card--banner{
+        order: 1;
     }
 }
 
