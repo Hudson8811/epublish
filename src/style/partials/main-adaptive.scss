@@ -1,13 +1,6 @@
 @media screen and (max-width: 1400px){
-  .double-row, .double-row .hcb-top{
-    margin-right: 0;
-  }
-  .double-row .block{
-    width: 100%;
-    margin-right: 30;
-  }
-  .double-row .block iframe{
-    height: 500px;
+  .triple-row .block{
+    width: 47%;
   }
 }
 
@@ -60,8 +53,24 @@
 }
 
 @media screen and (max-width: 700px){
-  iframe, .double-row .block iframe{
-    max-height: 350px;
+  .triple-row, .triple-row .hcb-top{
+    margin-right: 0;
+  }
+  .triple-row .block{
+    width: 100%;
+  }
+  .img-rows-block{
+    .img-row{
+      .img-block{
+        width: 100%;
+        float: none !important;
+        margin: 0 0 10px !important;
+        +.block{
+          text-align: center;
+          margin: 0 !important;
+        }
+      }
+    }
   }
   .comment_form .row{
     margin-right: 0;

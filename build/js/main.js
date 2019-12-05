@@ -96,4 +96,38 @@ $(document).ready(function () {
            }
         });
     }
+
+
+
+    $('.iframe').each(function () {
+       var url = $(this).attr('href');
+       var thumb = Youtube.thumb(url, 'big');
+       console.log(thumb);
+       $(this).find('img').attr('src',thumb).show();
+    });
 });
+
+
+var Youtube = (function () {
+    'use strict';
+
+    var video, results;
+
+    var getThumb = function (url, size) {
+        if (url === null) {
+            return '';
+        }
+        size    = (size === null) ? 'big' : size;
+        results = url.match('[\\?&]v=([^&#]*)');
+        video   = (results === null) ? url : results[1];
+
+        if (size === 'small') {
+            return 'http://img.youtube.com/vi/' + video + '/2.jpg';
+        }
+        return 'http://img.youtube.com/vi/' + video + '/0.jpg';
+    };
+
+    return {
+        thumb: getThumb
+    };
+}());
