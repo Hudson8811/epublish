@@ -14,27 +14,7 @@
 <body>
 	<div id="menu_top"></div>
 	<div id="header">
-		<div class="container">
-			<a href="" class="low_see button">
-				<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="15px"
-					viewBox="0 0 22 15" style="enable-background:new 0 0 22 15;" xml:space="preserve">
-					<style type="text/css">
-						.st0 {
-							fill: none;
-						}
-					</style>
-					<path class="st0" d="M-1-4.5h24v24H-1V-4.5z" />
-					<path d="M11,0C6,0,1.7,3.1,0,7.5C1.7,11.9,6,15,11,15s9.3-3.1,11-7.5C20.3,3.1,16,0,11,0z M11,12.5c-2.8,0-5-2.2-5-5s2.2-5,5-5
-				s5,2.2,5,5S13.8,12.5,11,12.5z M11,4.5c-1.7,0-3,1.3-3,3s1.3,3,3,3s3-1.3,3-3S12.7,4.5,11,4.5z" />
-				</svg>
-				Версия для слабовидящих</a>
-			<a href="" class="logo"><img src="images/logo.svg" alt=""></a>
-			<div class="slogan">Мы предоставляем программное обеспечение, Интернет-сервисы и консультации для создания и
-				ведения сайтов в полном
-				соответствии с требованиями российского законодательства к сайтам образовательных организаций.</div>
-			<div class="clear"></div>
-		</div>
+		//= template/header.html
 	</div>
 
 	<div class="container menu_row">
@@ -48,29 +28,10 @@
 			</a>
 		</div>
 		<div id="menu_middle">
-			<ul>
-				<li>
-					<a href="">Продукты </a>
-					<ul>
-						<li><a href="">Конструктор сайтов Е-Publish</a></li>
-						<li><a href="">Конструктор сайтов Е-Publish</a></li>
-						<li><a href="">Конструктор сайтов Е-Publish</a></li>
-						<li><a href="">Конструктор сайтов Е-Publish</a></li>
-					</ul>
-				</li>
-				<li><a href="">Помощь</a></li>
-				<li><a href="">Документы</a></li>
-				<li><a href="">Обучение</a></li>
-				<li><a href="">Виртуальный кабинет</a></li>
-			</ul>
+			//= template/menu/middle.html
 		</div>
 		<div id="search">
-			<form name="frm_s" onsubmit='search_text();return false;'>
-				<div id='l_search'>
-					<input class="search_t inputbox" name="search_t" placeholder="Поиск по сайту...">
-					<input class="search_b" type="submit" value="Найти" name="search_b">
-				</div>
-			</form>
+			//= template/search.html
 		</div>
 		<div class="clear"></div>
 	</div>
@@ -78,87 +39,14 @@
 	<div class="container">
 		<div class="left_side_bar">
 			<div id="menu_left">
-				<div id="left-swap-menu">
-					<a href="">Продукты Е-Паблиш</a>
-					<ul>
-						<li class="active">
-							<a href="">Конструктор сайтов Е-Publish</a>
-						</li>
-						<li><a href="">Конструктор сайтов Е-Publish</a></li>
-						<li><a href="">Конструктор сайтов Е-Publish</a></li>
-						<li><a href="">Конструктор сайтов Е-Publish</a></li>
-					</ul>
-				</div>
+				//= template/menu/left-menu.html
 			</div>
 			<div id="anons_1">
-				<div class="anons_text">
-					<div class="ah1">Техподдержка</div>
-					<div class="border">
-						<div class="block">
-							<div class="ah2">
-
-								<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
-									height="16px" viewBox="0 0 20 16"
-									style="enable-background:new 0 0 20 16;height: 14px;" xml:space="preserve">
-									<style type="text/css">
-										.st0 {
-											fill: none !important;
-											;
-										}
-									</style>
-									<path class="st0" d="M-2-4h24v24H-2V-4z" />
-									<path d="M18,0H2C0.9,0,0,0.9,0,2l0,12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z M18,14H2V4l8,5l8-5V14z M10,7L2,2
-								h16L10,7z" />
-								</svg>
-
-								Email</div>
-							<a href="">info@edusite.ru</a>
-						</div>
-						<div class="block">
-							<div class="ah2">
-								<img style="margin-right: 4px;" src="img/skype.png" alt="">
-								Skype</div>
-							<a href="">support_edusite</a>
-							<a href="">e-publish.ru</a>
-						</div>
-						<div class="block">
-							<div class="ah2">
-
-								<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px"
-									height="18px" viewBox="0 0 18 18"
-									style="enable-background:new 0 0 18 18;height: 15px;" xml:space="preserve">
-									<style type="text/css">
-										.st0 {
-											fill: none !important;
-										}
-									</style>
-									<path class="st0" d="M-3-3h24v24H-3V-3z" />
-									<path
-										d="M3.6,7.8c1.4,2.8,3.8,5.1,6.6,6.6l2.2-2.2c0.3-0.3,0.7-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6c0.5,0,1,0.4,1,1V17
-								c0,0.5-0.5,1-1,1C7.6,18,0,10.4,0,1c0-0.5,0.5-1,1-1h3.5c0.6,0,1,0.5,1,1c0,1.3,0.2,2.4,0.6,3.6c0.1,0.3,0,0.7-0.3,1L3.6,7.8z" />
-								</svg>
-								Телефоны</div>
-							<a href="">+7(800) 511 08 86
-								(бесплатный)</a>
-							<a href="">+7(903) 005 03 02</a>
-							<a href="">+7(967) 005 08 80</a>
-						</div>
-					</div>
-				</div>
+				//= template/anons_1.html
 			</div>
 		</div>
 		<!--<div class="right_side_bar">
-			<div id="right-swap-menu">
-				<a href="">Продукты  Е-Паблиш</a>
-				<ul>
-					<li class="active"><a href="">Конструктор сайтов Е-Publish</a></li>
-					<li><a href="">Конструктор сайтов Е-Publish</a></li>
-					<li><a href="">Конструктор сайтов Е-Publish</a></li>
-					<li><a href="">Конструктор сайтов Е-Publish</a></li>
-				</ul>
-			</div>
+			//= template/right_side_bar.html
 		</div>-->
 		<div class="inner">
 			<div class="homepage-content">
@@ -479,88 +367,7 @@
 	</div>
 
 	<div id="footer_block">
-		<div id="menu_bottom_border">
-			<div class="container">
-				<div id="menu_bottom">
-					<ul>
-						<li>
-							<a href="">Продукты</a>
-						</li>
-						<li>
-							<a href="">Помощь</a>
-						</li>
-						<li>
-							<a href="">Документы</a>
-						</li>
-						<li>
-							<a href="">Обучение</a>
-						</li>
-						<li>
-							<a href="">Виртуальный кабинет</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div id="footer">
-				<ul>
-					<li>
-						<p align="left"><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97">Конструктор&nbsp;сайтов Е-Паблиш</a><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97"></a></p></li><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97">
-				</a><li><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97">
-				</a><p align="left"><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97"></a><a title="Руководство по созданию и ведению сайта" href="https://info.edusite.ru/" target="_blank">Руководство по созданию и ведению сайта</a><a href="https://info.edusite.ru/"></a><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97"></a></p></li><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97">
-				</a><li><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97">
-				</a><p align="left"><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97"></a><a href="https://info.edusite.ru/">Прием обращений граждан - ставится на любой сайт</a><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97"></a></p></li><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97">
-				</a><li><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97">
-				</a><p align="left"><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97"></a><a href="https://info.edusite.ru/">Электронное портфолио педагога</a><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97"></a></p></li><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97">
-				</a><li><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97">
-				</a><p align="left"><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97"></a><a href="https://info.edusite.ru/">Информационно-образовательная среда "Виртуальный детский сад"</a><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97"></a></p></li><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97">
-				</a><li><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97">
-				</a><p align="left"><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97"></a><a href="https://info.edusite.ru/">Он-лайн журнал "РусОбр" - инновационные технологии в воспитании и образовании"</a><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97"></a></p></li><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97">
-				</a><li><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97">
-				</a><p align="left"><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97"></a><a title="Как заказать хостинг" href="p87aa1.html" page="87">PHP-hosting</a><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97"></a></p></li><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97">
-				</a><li><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97">
-				</a><p align="left"><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97"></a><a title="Как заказать виртуальную машину" href="p166aa1.html" page="166">Виртуальная машина </a><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97"></a></p></li><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97">
-				</a><li><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97">
-				</a><p align="left"><a title="самый удобный инструмент для создания и ведения школьного сайта." href="p97aa1.html" page="97"></a><a title="Электронные мультимедийные курсы, созданные в Конструкторе сйтов E-Publish" href="p127aa1.html" page="127">Электронные мультимедийные курсы, созданные в Конструкторе сйтов E-Publish</a></p></li>
-					<li>
-						<p align="left"><a href="https://www.youtube.com/channel/UCu8yIdnFaUulVR51TYtemjw?view_as=subscriber" target="_blank">Канал Е-Паблиш на YouTube </a></p></li></ul>
-
-				<div class="info">
-					<a class="border" href="mailto:info@edusite.ru">
-						<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="16px" viewBox="0 0 20 16" style="enable-background:new 0 0 20 16;height: 14px;" xml:space="preserve">
-									<style type="text/css">
-										.st0 {
-											fill: none !important;
-										;
-										}
-									</style>
-									<path class="st0" d="M-2-4h24v24H-2V-4z"></path>
-									<path d="M18,0H2C0.9,0,0,0.9,0,2l0,12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z M18,14H2V4l8,5l8-5V14z M10,7L2,2
-								h16L10,7z"></path>
-						</svg>
-						info@edusite.ru
-					</a>
-					<span class="border">Skype: support_edusite e-publish.ru</span>
-					<span>Бесплатный телефон поддержки: <span class="nowrap">+7(800) 511 08 86</span>   <span class="nowrap">+7(903) 005 03 02</span>   <span class="nowrap">+7(967) 005 08 80</span></span>
-				</div>
-			</div>
-		</div>
-		<div id="our_out">
-			<div class="container">
-				<div id="our">
-					<table>
-						<tr>
-							<td>e-Publish Education</td>
-							<td>
-								<p>Дата последнего обновления страницы 02.10.2019</p>
-								<p>Сайт создан по технологии «Конструктор сайтов e-Publish»</p>
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</div>
+		//= template/footer_block.html
 	</div>
 
 	<script src="js/main.js"></script>

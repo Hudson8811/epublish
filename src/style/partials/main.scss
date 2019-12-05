@@ -1,6 +1,6 @@
 $font1: "Roboto", sans-serif;
-$color1: #3c5adc;    										/*цвет меню*/
-$shadow1: 0px 2px 5px 0px rgba(45, 136, 195, 0.75);         /*тень меню*/
+$color1: #447dda;    										/*цвет меню*/
+$shadow1: 0 2px 5px rgba(45, 136, 195, 0.5);         /*тень меню*/
 $color2: #facf21;    										/*цвет кнопок*/
 
 *{
@@ -383,11 +383,31 @@ ul.dot {
 		list-style: none;
 		&.active a{
 			color: $color1;
+			text-decoration: underline;
+			font-style: italic;
+			svg *{
+				fill: $color1;
+			}
 		}
 		& > a{
 			color: #5d5d68;
 			&:hover{
 				color: $color1;
+			}
+			span{
+				display: inline-block;
+				vertical-align: middle;
+				text-decoration: inherit;
+				&.img{
+					width: 24px;
+					margin-right: 6px;
+					>*{
+						max-width: 100%;
+					}
+					+span{
+						max-width: calc(100% - 30px);
+					}
+				}
 			}
 		}
 	}
