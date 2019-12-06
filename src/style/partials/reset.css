@@ -26,7 +26,8 @@ em{
 u{
 	text-decoration: underline;
 }
-.inner ul:not(.ul):not(.slick-dots), .inner ul:not(.ul):not(.slick-dots) > li{
+.inner ul:not(.ul):not(.slick-dots), .inner ul:not(.ul):not(.slick-dots) > li,
+#anons_1 ul, #anons_1 ul > li{
 	display: block;
 	list-style: none;
 }
