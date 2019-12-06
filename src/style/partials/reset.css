@@ -26,7 +26,7 @@ em{
 u{
 	text-decoration: underline;
 }
-ul:not(.ul),ul:not(.ul) > li,{
+.inner ul:not(.ul),ul:not(.ul) > li,{
 	display: block;
 	list-style: none;
 }
