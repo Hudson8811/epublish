@@ -20,9 +20,13 @@ time, mark, audio, video {
 b, strong{
 	font-weight: 700;
 }
-i{
+em{
 	font-style: italic;
 }
 u{
 	text-decoration: underline;
+}
+ul:not(.ul),ul:not(.ul) > li,{
+	display: block;
+	list-style: none;
 }
