@@ -17,6 +17,10 @@ a{
 
 html,body{
 }
+#main{
+	max-width: 100%;
+	width: 100% !important;
+}
 img {
 	max-width: 100%;
 	height: auto;
@@ -590,7 +594,7 @@ ul.dot {
 	.hcb-top{
 		margin-right: 3%;
 	}
-	.block{
+	>li{
 		display: inline-block;
 		vertical-align: top;
 		width: 30%;

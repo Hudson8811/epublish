@@ -1,5 +1,5 @@
 @media screen and (max-width: 1400px){
-  .triple-row .block{
+  .triple-row >li{
     width: 47%;
   }
 }
@@ -56,7 +56,7 @@
   .triple-row, .triple-row .hcb-top{
     margin-right: 0;
   }
-  .triple-row .block{
+  .triple-row >li{
     width: 100%;
   }
   .img-rows-block{

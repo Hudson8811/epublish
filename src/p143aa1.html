@@ -160,80 +160,91 @@
 				</ul>
 			</div>
 		</div>-->
-		<div class="inner">
-			<div class="usluga-content">
-				<div class="hcb-top">
-					<div class="hcb-top__left">
+		<li class="inner">
+			<ul>
+				<li class="usluga-content">
+					<ul class="hcb-top">
+						<li class="hcb-top__left">
 
-						<h1 class="hcb-top-title"><span class="text">Портфолио класса</span></h1>
-						<div class="clear"></div>
+							<h1 class="hcb-top-title"><span class="text">Портфолио класса</span></h1>
+							<p class="clear"></p>
+						</li>
+						<li class="clear"></li>
+					</ul>
+
+					<ul class="hcb-top">
+						<li class="hcb-top__left">
+
+							<h2 class="hcb-top-title"><span class="text">Комментарии</span></h2>
+							<p class="clear"></p>
+						</li>
+						<li class="clear"></li>
+					</ul>
+
+					<h2 class="ah2-title">Уважаемые коллеги!</h2>
+
+					<p>Просьба оставлять комментарии только по тематике раздела: "Портфолио класса".</p>
+					<p>Не относящиеся к тематике раздела комментарии не будут опубликованы.</p>
+
+		<ul class="comments-block">
+			<li class="block">
+				<span class="date">05/11/2019, 19:46</span>
+				<p class="title">Команда E-Publish <span>Администратор</span></p>
+				<p>Здравствуйте, Виктор Павлович.</p>
+				<p>С юридической точки зрения, оплатить домен и хостинг сайта организации, имеет право как сама
+					организация (по статье - "Телекоммуникация и связь", или из внебюджетных фондов), так и
+					любое физ.лицо.</p>
+			</li>
+			<li class="block">
+				<span class="date">05/11/2019, 19:46</span>
+				<p class="title">Команда E-Publish <span>Администратор</span></p>
+				<p>Здравствуйте, Виктор Павлович.</p>
+				<p>С юридической точки зрения, оплатить домен и хостинг сайта организации, имеет право как сама
+					организация (по статье - "Телекоммуникация и связь", или из внебюджетных фондов), так и
+					любое физ.лицо.</p>
+			</li>
+		</ul>
+
+
+
+		<form action="/_ext/comment.php?pid=143&amp;title=Портфолио класса&amp;notify=yes" method="POST"
+			  target="comm" name="comment_form">
+			<ul class="comment_form">
+				<li class="ah2-title">Оставьте комментарий</li>
+				<li class="row">
+					<div class="item">
+						<label>Фамилия, имя, отчество</label>
+						<input class="inputbox" type="text" name="poster_name"
+							   placeholder="Например, Иванов Иван Иванович...">
 					</div>
-					<div class="clear"></div>
-				</div>
-
-				<div class="hcb-top">
-					<div class="hcb-top__left">
-
-						<h2 class="hcb-top-title"><span class="text">Комментарии</span></h2>
-						<div class="clear"></div>
+					<div class="item">
+						<label>Ваш e-mail</label>
+						<input class="inputbox" type="email" name="poster_email" placeholder="mail@mail.ru">
 					</div>
-					<div class="clear"></div>
-				</div>
-
-				<h2 class="ah2-title">Уважаемые коллеги!</h2>
-
-				<p>Просьба оставлять комментарии только по тематике раздела: "Портфолио класса".</p>
-				<p>Не относящиеся к тематике раздела комментарии не будут опубликованы.</p>
-
-				<div class="comments-block">
-					<div class="block">
-						<span class="date">05/11/2019, 19:46</span>
-						<div class="title">Команда E-Publish <span>Администратор</span></div>
-						<p>Здравствуйте, Виктор Павлович.</p>
-						<p>С юридической точки зрения, оплатить домен и хостинг сайта организации, имеет право как сама организация (по статье - "Телекоммуникация и связь", или из внебюджетных фондов), так и любое физ.лицо.</p>
+					<div class="item">
+						<label>Ваш статус</label>
+						<select name="poster_status">
+							<option value="-1">Укажите</option>
+							<option value="1">Педагог</option>
+							<option value="2">Ученик</option>
+							<option value="3">Родитель</option>
+							<option value="4">Преподаватель ВУЗа</option>
+							<option value="5">Администратор</option>
+							<option value="6">Иное</option>
+						</select>
 					</div>
-					<div class="block">
-						<span class="date">05/11/2019, 19:46</span>
-						<div class="title">Команда E-Publish <span>Администратор</span></div>
-						<p>Здравствуйте, Виктор Павлович.</p>
-						<p>С юридической точки зрения, оплатить домен и хостинг сайта организации, имеет право как сама организация (по статье - "Телекоммуникация и связь", или из внебюджетных фондов), так и любое физ.лицо.</p>
-					</div>
+				</li>
+				<li><label>Ваш комментарий</label></li>
+				<li><textarea name="comment"></textarea></li>
+				<li><label class="code">Код: </label><input type="text" maxlength="5" name="code"><img
+						name="capcha" src="/_ext/pic.php" style="width: 120px; height: 35px;">
+					<input type="submit" name="send" value="Отправить" class="all-page-button button"></li>
+			</ul>
+		</form>
 
-					<form action="/_ext/comment.php?pid=143&amp;title=Портфолио класса&amp;notify=yes" method="POST" target="comm" name="comment_form">
-						<div class="comment_form">
-							<div class="ah2-title">Оставьте комментарий</div>
-							<div class="row">
-								<div class="item">
-									<label>Фамилия, имя, отчество</label>
-									<input class="inputbox" type="text" name="poster_name" placeholder="Например, Иванов Иван Иванович...">
-								</div>
-								<div class="item">
-									<label>Ваш e-mail</label>
-									<input class="inputbox" type="email" name="poster_email" placeholder="mail@mail.ru">
-								</div>
-								<div class="item">
-									<label>Ваш статус</label>
-									<select name="poster_status">
-										<option value="-1">Укажите</option>
-										<option value="1">Педагог</option>
-										<option value="2">Ученик</option>
-										<option value="3">Родитель</option>
-										<option value="4">Преподаватель ВУЗа</option>
-										<option value="5">Администратор</option>
-										<option value="6">Иное</option>
-									</select>
-								</div>
-							</div>
-							<label>Ваш комментарий</label>
-							<textarea name="comment" ></textarea>
-							<label class="code">Код: </label><input type="text" maxlength="5" name="code"><img name="capcha" src="/_ext/pic.php" style="width: 120px; height: 35px;">
-							<input type="submit" name="send" value="Отправить" class="all-page-button button">
-						</div>
-					</form>
-				</div>
-
-				<div class="clear"></div>
-			</div>
+					<p class="clear"></p>
+				</li>
+			</ul>
 		</div>
 
 		<div class="clear"></div>
