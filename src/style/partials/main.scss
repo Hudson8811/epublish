@@ -841,3 +841,50 @@ ul.dot {
 		color: #33333d;
 	}
 }
+
+
+#mobile-menu{
+	display: none;
+	position: fixed;
+	height: 100vh;
+	left: -300px;
+	top: 0;
+	width: 300px;
+	z-index: 75;
+	background: #fff;
+	padding-top: 30px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-bottom: 30px;
+	-webkit-transition: left 0.3s linear;
+	transition: left 0.3s linear;
+
+	&.active{
+		left: 0;
+	}
+	.close_menu{
+		cursor: pointer;
+		position: absolute;
+		right: 20px;
+		top: 15px;
+		width: 16px;
+		height: 16px;
+		background: url(../img/close.svg) no-repeat;
+	}
+}
+#mobile-shadow{
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 70;
+	background: rgba(0, 0, 0, 0.25);
+	display: none;
+	&.active{
+		@media all and (max-width: 1000px) {
+			display: block;
+		}
+	}
+}

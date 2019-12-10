@@ -64,6 +64,17 @@ $(document).ready(function () {
        console.log(thumb);
        $(this).find('img').attr('src',thumb).show();
     });
+    
+    
+    $('.mobile-menu-toggle').click(function () {
+        $('#mobile-menu').addClass('active');
+        $('#mobile-shadow').addClass('active');
+    });
+    $('#mobile-menu .close_menu,#mobile-shadow').click(function () {
+        $('#mobile-menu').removeClass('active');
+        $('#mobile-shadow').removeClass('active');
+    });
+
 });
 
 
