@@ -65,9 +65,11 @@
         width: 100%;
         float: none !important;
         margin: 0 0 10px !important;
-        +.block{
+        +.block,+li{
+          width: 100%;
           text-align: center;
           margin: 0 !important;
+          float: none;
         }
       }
     }

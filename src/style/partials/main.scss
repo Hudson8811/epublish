@@ -595,7 +595,7 @@ ul.dot {
 		margin-right: 3%;
 	}
 	>li{
-		display: inline-block;
+		display: inline-block !important;
 		vertical-align: top;
 		width: 30%;
 		margin-right: 3%;
@@ -634,10 +634,11 @@ ul.dot {
 		.img-block{
 			width: 250px;
 			text-align: center;
-			+.block{
+			+.block,+li{
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 19px;
+
 			}
 		}
 	}
@@ -645,8 +646,10 @@ ul.dot {
 		.img-row{
 			.img-block{
 				float: left;
-				+.block{
+				+.block,+li{
 					margin-left: 30px;
+					width: calc(100% - 280px);
+					float: right;
 				}
 			}
 		}
