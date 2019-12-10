@@ -888,3 +888,25 @@ ul.dot {
 		}
 	}
 }
+
+#menu_top{
+	border-bottom: 1px solid #e6e6e6;
+	ul{
+		padding-top: 15px;
+		padding-bottom: 15px;
+		text-align: center;
+	}
+	ul li{
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 14px;
+		margin-right: 14px;
+		a{
+			color: inherit;
+			text-decoration: none;
+			&:hover{
+				color: $color1;
+			}
+		}
+	}
+}
