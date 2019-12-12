@@ -56,6 +56,26 @@
   #menu_top{
     display: none;
   }
+
+
+  #text_div .message_list2{
+    .message_body{
+      padding: 0 0 14px 0px!important;
+      table{
+        display: block;
+        tr{
+          display: block;
+          &:first-child{
+            display: none;
+          }
+        }
+        td{
+          display: block;
+          text-align: left;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 700px){

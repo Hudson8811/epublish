@@ -171,6 +171,13 @@ ul.dot {
 		}
 	}
 }
+ol{
+	li{
+		padding-left: 15px;
+		position: relative;
+		margin-bottom: 2px;
+	}
+}
 
 #header{
 	padding-top: 16px;
@@ -290,6 +297,7 @@ ul.dot {
 		vertical-align: top;
 		line-height: 51px;
 		padding: 0 14px;
+		position: relative;
 		& > a{
 			color: #fff;
 			display: block;
@@ -299,12 +307,31 @@ ul.dot {
 			position: absolute;
 			list-style: none;
 			z-index: 3;
-			background-color: #fff;
-			&:before{
-				content: '';
-				position: absolute;
-				left: 0;
-				width: 100%;
+			left: 0;
+			top: 100%;
+			box-shadow: 0 2px 5px rgba(60, 71, 78, 0.2);
+			border-radius: 0 0 15px 15px;
+			border: 1px solid #d9d9d9;
+			background-color: #ffffff;
+			max-width: 270px;
+			box-sizing: border-box;
+			padding: 20px 29px 30px;
+			li{
+				line-height: 18px;
+				display: block;
+				width: max-content;
+				max-width: 100%;
+				a{
+					color: #5d5d68;
+					font-size: 14px;
+					font-weight: 400;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+				+li{
+					margin-top: 15px;
+				}
 			}
 		}
 		&:hover {
@@ -906,6 +933,161 @@ ul.dot {
 			text-decoration: none;
 			&:hover{
 				color: $color1;
+			}
+		}
+	}
+}
+
+.message_list2 + .text form,
+.eform{
+	margin-top: 40px;
+	h5{
+		font-size: 20px;
+		line-height: 23px;
+		color: #33333d;
+		margin-bottom: 15px;
+	}
+	table{
+		display: block;
+		width: 100%;
+		tbody{
+			display: block;
+		}
+		tr{
+			display: block;
+			margin-bottom: 15px;
+			td{
+				display: block;
+				text-align: left;
+			}
+		}
+	}
+	input:not([type=submit]){
+		background-color: #fcfcfc;
+		box-shadow: none;
+		border:1px solid #cccccc;
+		font-size: 14px;
+		line-height: 17px;
+		padding: 8px 15px;
+		width: 100% !important;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		-webkit-border-radius: 18px;
+		-moz-border-radius: 18px;
+		border-radius: 18px;
+		&[name="code"]{
+			display: inline-block;
+			vertical-align: top;
+			width: 130px;
+			margin-left: 5px;
+			margin-right: 20px;
+		}
+	}
+	textarea{
+		margin-bottom: 20px;
+		background-color: #fcfcfc;
+		box-shadow: none;
+		border:1px solid #cccccc;
+		font-size: 14px;
+		line-height: 17px;
+		padding: 15px;
+		height: 130px !important;
+		width: 100% !important;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		-webkit-border-radius: 18px;
+		-moz-border-radius: 18px;
+		border-radius: 18px;
+		resize: none;
+	}
+	select{
+		background-color: #fcfcfc;
+		box-shadow: none;
+		border:1px solid #cccccc;
+		font-size: 14px;
+		line-height: 17px;
+		padding: 8px 15px;
+		width: 100% !important;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		-webkit-border-radius: 18px;
+		-moz-border-radius: 18px;
+		border-radius: 18px;
+	}
+	.code{
+		display: inline-block;
+		vertical-align: top;
+		line-height: 35px;
+	}
+	input[type="submit"]{
+		background-color: #facf21;
+		color: #33333d;
+		text-decoration: none;
+		vertical-align: top;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		border-radius: 25px;
+		font-size: 18px;
+		font-weight: 500;
+		display: block;
+		width: 200px;
+		border:0;
+		padding: 0;
+		margin-top: 20px;
+		cursor: pointer;
+	}
+}
+
+#text_div .message_list2{
+	width: 100%;
+	.message_head {
+		border: 0;
+		background-color: #fff;
+		color: #33333d;
+		font-size: 15px !important;
+		font-weight: 400 !important;
+		line-height: 24px;
+		text-decoration: none;
+		cursor: pointer;
+		position: relative;
+		margin: 2px 0 0 0;
+		padding: .5em .5em .5em .7em;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	.message_body{
+		border: 0;
+		background-color: #fff;
+		padding: 0 0 14px 58px!important;
+		font-size: 14px !important;
+		font-weight: 400 !important;
+		line-height: 22px;
+		text-align: left;
+		img[align="left"]{
+			margin: 0 10px 10px 0;
+		}
+		table{
+			text-align: center;
+			color: #5d5d68;
+			border-radius: 15px;
+			border-collapse: collapse;
+			width: 100%;
+			overflow: hidden;
+			td{
+				padding: 8px 8px;
+				border: 1px solid #ededed;
+			}
+		}
+		ol{
+			li{
+				padding-left: 15px;
+				position: relative;
+				margin-bottom: 2px;
 			}
 		}
 	}
