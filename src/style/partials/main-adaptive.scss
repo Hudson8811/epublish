@@ -2,6 +2,10 @@
   .triple-row >li{
     width: 47%;
   }
+  .homepage-content-block .homepage-content-block__top > ul{
+    display: flex !important;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 1000px){

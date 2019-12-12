@@ -107,3 +107,4 @@ var Youtube = (function () {
         thumb: getThumb
     };
 }());
+
