@@ -75,6 +75,12 @@ $(document).ready(function () {
         $('#mobile-shadow').removeClass('active');
     });
 
+    $('#mobile-menu .haschild > a').click(function (e) {
+        e.preventDefault();
+        $(this).siblings('ul').slideToggle().parent().toggleClass('active')
+    });
+
+
 });
 
 
