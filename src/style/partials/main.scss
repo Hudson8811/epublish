@@ -1022,17 +1022,16 @@ ol{
 		margin-bottom: 15px;
 	}
 	table{
-		display: block;
-		width: 100%;
+		width: 600px;
+		max-width: 100%;
 		tbody{
-			display: block;
 		}
 		tr{
-			display: block;
-			margin-bottom: 15px;
 			td{
-				display: block;
-				text-align: left;
+				padding-bottom: 10px;
+				&:nth-child(1){
+					width: 300px;
+				}
 			}
 		}
 	}
